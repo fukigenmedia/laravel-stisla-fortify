@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 	return view('welcome');
-});
+})->name('welcome');
 
 Route::view('banned', 'errors.banned')->name('banned');
 Route::view('deleted', 'errors.deleted')->name('deleted');

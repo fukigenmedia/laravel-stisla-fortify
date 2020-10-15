@@ -12,7 +12,7 @@
     </div>
     <div class="page-search">
       <div class="mt-2">
-        <a href="">Kembali ke Home</a>
+        <a href="{{ route('welcome') }}">Kembali ke Home</a>
       </div>
     </div>
   </div>
