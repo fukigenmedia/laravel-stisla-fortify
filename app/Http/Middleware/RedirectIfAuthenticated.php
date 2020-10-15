@@ -27,12 +27,12 @@ class RedirectIfAuthenticated
                     Auth::user()->admin_id != null &&
                     Auth::user()->member_id == null
                 ) {
-                    return redirect()->route('admin.home');
+                    return redirect()->route('admin.index');
                 } else if (
                     Auth::user()->admin_id == null &&
                     Auth::user()->member_id != null
                 ) {
-                    return redirect()->route('member.home');
+                    return redirect()->route('member.index');
                 } else {
                     return abort(403);
                 }

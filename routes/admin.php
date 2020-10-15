@@ -13,3 +13,6 @@ use Illuminate\Support\Facades\Route;
 | Middleware : web, auth, admin
 |
 */
+
+# Master Controller
+Route::get('', 'DashboardController@index')->name('index');

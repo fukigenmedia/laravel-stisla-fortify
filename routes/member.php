@@ -13,3 +13,5 @@ use Illuminate\Support\Facades\Route;
 | Middleware : web, auth, member
 |
 */
+
+Route::get('', 'DashboardController@index')->name('index');
