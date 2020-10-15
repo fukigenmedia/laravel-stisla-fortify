@@ -13,7 +13,9 @@
                     </a>
                 </li>
                 <li>
-                    <span class="badge badge-light mt-1 ml-3">Admin</span>
+                    <span class="badge badge-light mt-1 ml-3">
+                        {{ ucfirst(auth()->user()->role) }}
+                    </span>
                 </li>
             </ul>
         </form>
