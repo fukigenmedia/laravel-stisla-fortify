@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', 'DashboardController@index')->name('index');
+# Master Controller
+Route::view('', 'member.dashboard')->name('index');
+Route::view('profile', 'member.profile')->name('profile');
