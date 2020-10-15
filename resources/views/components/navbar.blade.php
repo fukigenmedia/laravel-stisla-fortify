@@ -25,11 +25,11 @@
                 <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                     <img alt="image" src="{{ auth()->user()->avatar_url }}" width="30" class="rounded-circle mr-1">
                     <div class="d-sm-none d-lg-inline-block">
-                        Hi, {{ auth()->user()->name }}
+                        Hi, {{ Str::words(auth()->user()->name, 1, '') }}
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a href="features-profile.html" class="dropdown-item has-icon">
+                    <a href="{{ auth()->user()->profile_url }}" class="dropdown-item has-icon">
                         <i class="far fa-user"></i> Profile
                     </a>
                     <a href="features-settings.html" class="dropdown-item has-icon">
