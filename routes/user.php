@@ -4,12 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| User Routes
+| Member Routes
 |--------------------------------------------------------------------------
 |
-| Prefix     : user
-| Name       : user.
-| Namespace  : User
-| Middleware : web, auth, role:user
+| Prefix     : member
+| Name       : member.
+| Namespace  : Member
+| Middleware : web, auth, member
 |
 */

@@ -10,6 +10,6 @@ use Illuminate\Support\Facades\Route;
 | Prefix     : admin
 | Name       : admin.
 | Namespace  : Admin
-| Middleware : web, auth, role:admin
+| Middleware : web, auth, admin
 |
 */

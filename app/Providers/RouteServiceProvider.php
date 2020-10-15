@@ -42,17 +42,17 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace . '\Frontend')
                 ->group(base_path('routes/web.php'));
 
-            Route::middleware('web', 'auth')
+            Route::middleware('web', 'auth', 'admin')
                 ->prefix('admin')
                 ->name('admin.')
                 ->namespace($this->namespace . '\Admin')
                 ->group(base_path('routes/admin.php'));
 
-            Route::middleware('web', 'auth')
-                ->prefix('user')
-                ->name('user.')
+            Route::middleware('web', 'auth', 'member')
+                ->prefix('member')
+                ->name('member.')
                 ->namespace($this->namespace . '\User')
-                ->group(base_path('routes/user.php'));
+                ->group(base_path('routes/member.php'));
         });
     }
 
