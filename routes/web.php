@@ -23,4 +23,5 @@ Route::view('deleted', 'errors.deleted')->name('deleted');
 Route::middleware('auth', 'verified')->group(function () {
 	Route::view('dashboard', 'dashboard')->name('dashboard');
 	Route::view('profile', 'profile')->name('profile');
+	Route::view('update-password', 'update-password')->name('update-password');
 });

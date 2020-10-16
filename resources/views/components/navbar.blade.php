@@ -24,10 +24,10 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a href="{{ auth()->user()->profile_url }}" class="dropdown-item has-icon">
+                    <a href="{{ route('profile') }}" class="dropdown-item has-icon">
                         <i class="far fa-user"></i> Profile
                     </a>
-                    <a href="features-settings.html" class="dropdown-item has-icon">
+                    <a href="{{ route('update-password') }}" class="dropdown-item has-icon">
                         <i class="fas fa-cog"></i> Settings
                     </a>
                     <div class="dropdown-divider"></div>
