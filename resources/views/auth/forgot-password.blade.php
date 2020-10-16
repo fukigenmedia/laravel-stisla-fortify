@@ -12,12 +12,13 @@
             </div>
 
             @if (session('status'))
-            <div class="alert alert-info shadow-sm">
-                <i class="fas fa-info fa-fw mr-2"></i>
-                {{ session('status') }}
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="alert alert-info alert-dismissible show fade">
+                <div class="alert-body">
+                    <button class="close" data-dismiss="alert">
+                        <span>×</span>
+                    </button>
+                    {{ session('status') }}
+                </div>
             </div>
             @endif
 
