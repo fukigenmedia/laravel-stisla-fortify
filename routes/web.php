@@ -13,15 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-	return view('welcome');
-})->name('welcome');
-
-Route::view('banned', 'errors.banned')->name('banned');
-Route::view('deleted', 'errors.deleted')->name('deleted');
+Route::view('/', 'welcome')->name('welcome');
 
 Route::middleware('auth', 'verified')->group(function () {
 	Route::view('dashboard', 'dashboard')->name('dashboard');
 	Route::view('profile', 'profile')->name('profile');
-	Route::view('update-password', 'update-password')->name('update-password');
 });
