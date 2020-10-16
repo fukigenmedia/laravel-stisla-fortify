@@ -38,6 +38,11 @@ $ php artisan migrate
 ```
 
 ## Screenshot
+<p align="center">
+    <img src="https://telegra.ph/file/c094b2c2de3c4ac93f978.png" width="80%" height="auto" />
+    <img src="https://telegra.ph/file/70fb085cc7cc7754e54b0.png" width="80%" height="auto" />
+    <img src="https://telegra.ph/file/d4436063826b48fab5376.png" width="80%" height="auto" />
+</p>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
