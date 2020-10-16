@@ -78,7 +78,7 @@
 
                 </div>
             </div>
-            <div class="mt-5 text-muted text-center">
+            <div class="mt-3 text-muted text-center">
                 Tidak punya akun? <a href="{{ route('register') }}">Buat Akun</a>
             </div>
         </div>
