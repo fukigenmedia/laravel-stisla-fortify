@@ -39,8 +39,8 @@
                             <input type="text" id="code" class="form-control" name="code" />
                         </div>
 
-                        <p>
-                            {{ __('Please confirm access to your account by entering one of your emergency recovery codes.') }}
+                        <p class="text-muted">
+                            {{ __('Or you can enter one of your emergency recovery codes.') }}
                         </p>
 
                         <div class="form-group">
