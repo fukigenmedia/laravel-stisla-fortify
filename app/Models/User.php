@@ -47,7 +47,7 @@ class User extends Authenticatable
         if ($this->avatar != null) :
             return asset($this->avatar);
         else :
-            return 'https://ui-avatars.com/api/?name=' . str_replace(' ', '+', $this->name) . '&background=6777ef&color=fff&size=100';
+            return 'https://ui-avatars.com/api/?name=' . str_replace(' ', '+', $this->name) . '&background=fff&color=6777ef&size=100';
         endif;
     }
 }

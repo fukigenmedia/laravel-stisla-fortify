@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::view('banned', 'errors.banned')->name('banned');
 Route::view('deleted', 'errors.deleted')->name('deleted');
 
-Route::view('home', 'home')
-	->name('home')
-	->middleware(['auth', 'verified']);
+Route::middleware('auth', 'verified')->group(function () {
+	Route::view('dashboard', 'dashboard')->name('dashboard');
+	Route::view('profile', 'profile')->name('profile');
+});
