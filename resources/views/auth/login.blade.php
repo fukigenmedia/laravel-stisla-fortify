@@ -46,7 +46,7 @@
                                 <div class="float-right">
                                     @if (Route::has('password.request'))
                                     <a href="{{ route('password.request') }}" class="text-small">
-                                        Lupa Password
+                                        Forgot Password?
                                     </a>
                                     @endif
                                 </div>
