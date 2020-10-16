@@ -69,6 +69,9 @@
                     </form>
                 </div>
             </div>
+            <div class="mt-3 text-muted text-center">
+                <a href="{{ route('login') }}">{{ __('Already registered?') }}</a>
+            </div>
             <div class="simple-footer">
                 Copyright © Stisla 2018
             </div>
