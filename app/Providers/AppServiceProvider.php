@@ -25,11 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        # Pengaturan waktu aplikasi
-        Carbon::setLocale('id');
-        date_default_timezone_set('Asia/Makassar');
+        # Locale Settings
+        // Carbon::setLocale('id');
+        // date_default_timezone_set('Asia/Makassar');
 
-        # Pengaturan Paginasi
+        # Pagination Setting
         Paginator::useBootstrap();
     }
 }
