@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
-@section('content')
-<div>
-    {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-</div>
+@section('title', 'Forgot Password')
 
+@section('content')
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
@@ -29,7 +27,9 @@
                 </div>
 
                 <div class="card-body">
-                    <p class="text-muted">We will send a link to reset your password</p>
+                    <p class="text-muted">
+                        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+                    </p>
                     <form method="POST" action="{{ route('password.email') }}">
                         @csrf
 
@@ -46,6 +46,9 @@
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="simple-footer">
+                Copyright © Stisla 2018
             </div>
         </div>
     </div>
