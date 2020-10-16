@@ -63,12 +63,19 @@
         @if (session('status')=='profile-information-updated')
         Profile has been updated.
         @endif
+        @if (session('status')=='password-updated')
+        Password has been updated.
+        @endif
       </div>
     </div>
     @endif
 
     @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updateProfileInformation()))
     @include('profile.update-profile-information-form')
+    @endif
+
+    @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
+    @include('profile.update-password-form')
     @endif
   </div>
 </div>

@@ -1,27 +1,30 @@
-<form method="POST" action="{{ route('user-password.update') }}">
-    @csrf
-    @method('PUT')
+<div class="card">
+    <form method="POST" action="{{ route('user-password.update') }}">
+        @csrf @method('PUT')
 
-    <div>
-        <label>{{ __('Current Password') }}</label>
-        <input type="password" name="current_password" required autocomplete="current-password" />
-    </div>
-
-    <div>
-        <label>{{ __('Password') }}</label>
-        <input type="password" name="password" required autocomplete="new-password" />
-    </div>
-
-    <div>
-        <label>{{ __('Confirm Password') }}</label>
-        <input type="password" name="password_confirmation" required autocomplete="new-password" />
-    </div>
-
-    <div>
-        <button type="submit">
-            {{ __('Save') }}
-        </button>
-    </div>
-</form>
-
-<hr>
+        <div class="card-header">
+            <h4>Update Password</h4>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label>{{ __('Current Password') }}</label>
+                <input type="password" class="form-control" name="current_password" required
+                    autocomplete="current-password" />
+            </div>
+            <div class="form-group">
+                <label>{{ __('Password') }}</label>
+                <input type="password" name="password" required autocomplete="new-password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>{{ __('Confirm Password') }}</label>
+                <input type="password" class="form-control" name="password_confirmation" required
+                    autocomplete="new-password" />
+            </div>
+        </div>
+        <div class="card-footer text-right">
+            <button class="btn btn-primary" type="submit">
+                {{ __('Update Profile') }}
+            </button>
+        </div>
+    </form>
+</div>
