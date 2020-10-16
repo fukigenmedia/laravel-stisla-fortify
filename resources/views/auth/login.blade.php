@@ -65,7 +65,7 @@
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
                                     id="remember-me" {{ old('remember') ? 'checked' : '' }}>
-                                <label class="custom-control-label" for="remember-me">Ingat Saya</label>
+                                <label class="custom-control-label" for="remember-me">Remember Me</label>
                             </div>
                         </div>
 
@@ -79,7 +79,10 @@
                 </div>
             </div>
             <div class="mt-3 text-muted text-center">
-                Tidak punya akun? <a href="{{ route('register') }}">Buat Akun</a>
+                Don't have an account? <a href="{{ route('register') }}">Create One</a>
+            </div>
+            <div class="simple-footer">
+                Copyright © Stisla 2018
             </div>
         </div>
     </div>
