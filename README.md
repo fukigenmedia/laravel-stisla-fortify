@@ -22,7 +22,6 @@ $ git clone https://github.com/fukigenmedia/laravel-stisla.git
 Install all dependency required by laravel.
 ```shell
 $ composer install
-$ composer dump-autoload
 ```
 
 Generate app key, configure `.env` file and do migration.
