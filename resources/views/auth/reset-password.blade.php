@@ -11,13 +11,22 @@
                     class="shadow-light rounded-circle">
             </div>
 
+            @if (session('status'))
+            <div class="alert alert-info shadow-sm">
+                <i class="fas fa-info fa-fw mr-2"></i>
+                {{ session('status') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            @endif
+
             <div class="card card-primary">
                 <div class="card-header">
                     <h4>Reset Password</h4>
                 </div>
 
                 <div class="card-body">
-                    <p class="text-muted">We will send a link to reset your password</p>
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
@@ -26,7 +35,7 @@
                         <div class="form-group">
                             <label for="email">{{ __('Email') }}</label>
                             <input id="email" type="email" class="form-control" name="email" tabindex="1"
-                                value="{{ old('email', $request->email) }}" required autofocus>
+                                value="{{ old('email', $request->email) }}" readonly>
                         </div>
 
                         <div class="form-group">
