@@ -23,7 +23,7 @@
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <x-navbar />
-      <x-admin-sidebar />
+      <x-sidebar />
       <div class="main-content">
         <section class="section">
           @yield('content')
