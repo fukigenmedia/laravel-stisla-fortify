@@ -11,6 +11,17 @@
                     alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
 
+            @if (session('status'))
+            <div class="alert alert-info alert-dismissible show fade">
+                <div class="alert-body">
+                    <button class="close" data-dismiss="alert">
+                        <span>×</span>
+                    </button>
+                    {{ session('status') }}
+                </div>
+            </div>
+            @endif
+
             <div class="card card-primary">
                 <div class="card-header">
                     <h4>Register</h4>
