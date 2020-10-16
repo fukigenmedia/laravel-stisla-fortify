@@ -40,16 +40,16 @@ class FortifyUIServiceProvider extends ServiceProvider
             return view('auth.reset-password', ['request' => $request]);
         });
 
-        // Fortify::verifyEmailView(function () {
-        //     return view('auth.verify-email');
-        // });
+        Fortify::verifyEmailView(function () {
+            return view('auth.verify-email');
+        });
 
-        // Fortify::confirmPasswordView(function () {
-        //     return view('auth.confirm-password');
-        // });
+        Fortify::confirmPasswordView(function () {
+            return view('auth.confirm-password');
+        });
 
-        // Fortify::twoFactorChallengeView(function () {
-        //     return view('auth.two-factor-challenge');
-        // });
+        Fortify::twoFactorChallengeView(function () {
+            return view('auth.two-factor-challenge');
+        });
     }
 }
