@@ -23,7 +23,7 @@
         </div>
         <div class="card-footer text-right">
             <button class="btn btn-primary" type="submit">
-                {{ __('Update Profile') }}
+                {{ __('Update Password') }}
             </button>
         </div>
     </form>
