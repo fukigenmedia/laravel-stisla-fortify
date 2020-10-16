@@ -8,9 +8,6 @@
         <h4>Dashboard</h4>
     </div>
     <div class="card-body">
-        @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::twoFactorAuthentication()))
-        @include('profile.two-factor-authentication-form')
-        @endif
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus temporibus aut ratione maxime
         accusamus
         commodi esse itaque tenetur. Temporibus ducimus ea veniam quisquam rerum vitae? Animi quos laudantium quam?

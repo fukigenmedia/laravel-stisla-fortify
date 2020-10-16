@@ -52,6 +52,9 @@
         </a>
       </div>
     </div>
+    @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::twoFactorAuthentication()))
+    @include('profile.two-factor-authentication-form')
+    @endif
   </div>
   <div class="col-12 col-md-12 col-lg-7">
     @if (session('status'))
@@ -65,6 +68,15 @@
         @endif
         @if (session('status')=='password-updated')
         Password has been updated.
+        @endif
+        @if (session('status')=='two-factor-authentication-disabled')
+        Two factor authentication disabled.
+        @endif
+        @if (session('status')=='two-factor-authentication-enabled')
+        Two factor authentication enabled.
+        @endif
+        @if (session('status')=='recovery-codes-generated')
+        Recovery codes generated.
         @endif
       </div>
     </div>
