@@ -1,3 +1,5 @@
+<img style="width: 100%; max-width: 100%;" alt="filament-shield-art" src="https://banners.beyondco.de/Laravel%20Stisla%20Fortify.png?theme=light&packageManager=&packageName=&pattern=architect&style=style_1&description=Start+your+laravel+project+with+FORTIFY+auth+and+STISLA+template&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg" >
+
 # Laravel + Stisla + FortifyUI
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/fukigenmedia/laravel-stisla/pulls)
